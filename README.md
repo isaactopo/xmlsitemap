@@ -17,7 +17,7 @@ Is a powerful tool for managing and generating sitemaps that is designed to work
 
 ## Setup
 
-The plugin works from the start, outputting all the listed pages on your Kirby Installation
+The plugin works from the start, outputting all the listed pages on your website on `yoursite/sitemap.xml` and redirecting `yoursite/sitemap` to `yoursite/sitemap.xml`
 
 ## Options and configuration
 The plugin has 3 config options that you can tweak from your `site/config.php` file
