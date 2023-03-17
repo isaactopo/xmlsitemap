@@ -1,16 +1,16 @@
 # Kirby 3 Multilanguage XML Sitemap Plugin
 
-Is a powerful tool for managing and generating sitemaps that is designed to work with [Kirby 3](https://getkirby.com). This plugin provides a straightforward approach to creating XML Sitemaps, especially for sites with multiple languages. The multilingual support allows you to create separate URLs for each language, increasing the SEO performance of your website. The plugin creates one XML file with URLs to your website pages and images, automagically ✨ assigning their priority and last modification date which can be later easily submitted to search engines.
+Is a powerful tool for managing and generating sitemaps that is designed to work with [Kirby 3](https://getkirby.com). This plugin provides a straightforward approach for creating XML Sitemaps, especially for sites with multiple languages. The multilingual support allows you to create separate URLs for each language, increasing the SEO performance of your website. The plugin creates one XML file with URLs to your website pages and images, automagically ✨ assigning their priority and last modification date which can be later easily submitted to search engines.
 
 ****
 ## How to install
 
 ### Download
 
-[Download and copy this repository](https://github.com/isaactopo/xmlsitemap/archive/main.zip) to /site/plugins/vcard-kirby3
+[Download and copy this repository](https://github.com/isaactopo/xmlsitemap/archive/main.zip) to /site/plugins/xmlsitemap
 
-### As a GIT Submodule
-```git submodule add https://github.com/isaactopo/vcard-kirby3.git site/plugins/vcard-kirby3```
+### As a Git Submodule
+```git submodule add https://github.com/isaactopo/xmlsitemap.git site/plugins/xmlsitemap```
 
 ### With Composer
 ```composer require isaactopo/xmlsitemap```
