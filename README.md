@@ -1,6 +1,6 @@
 # Kirby 3 Multilanguage XML Sitemap Plugin
 
-Is a powerful tool for managing and generating sitemaps that is designed to work with [Kirby 3](https://getkirby.com). This plugin provides a straightforward approach for creating XML Sitemaps, especially for sites with multiple languages. The multilingual support allows you to create separate URLs for each language, increasing the SEO performance of your website. The plugin creates one XML file with URLs to your website pages and images, automagically ✨ assigning their priority and last modification date which can be later easily submitted to search engines.
+Is a powerful tool for managing and generating sitemaps that is designed to work with [Kirby 3](https://getkirby.com). This plugin provides a straightforward approach for creating XML Sitemaps, especially for sites with multiple languages. The multilingual support allows you to create separate URLs for each language, increasing the SEO performance of your website. The plugin creates one XML file with URLs to your website pages and images, automagically ✨ assigning their priority and last modification date which can be later easily readed by search engines.
 
 ****
 ## How to install
@@ -17,10 +17,10 @@ Is a powerful tool for managing and generating sitemaps that is designed to work
 
 ## Setup
 
-The plugin works from the start, outputting all the listed pages on your website on `yoursite/sitemap.xml` and redirecting `yoursite/sitemap` to `yoursite/sitemap.xml`
+The plugin works from the start, outputting all the listed pages from your website on `yoursite/sitemap.xml` and redirecting `yoursite/sitemap` to `yoursite/sitemap.xml`
 
 ## Options and configuration
-The plugin has 3 config options that you can tweak from your `site/config.php` file
+The plugin has 3 config options that you can tweak from your `site/config.php` file:
 
 ### 🙈 Ignore Pages
 By default not listed pages are Ignored, but sometimes you will want to ignore specific pages. You are able to do it with:
@@ -53,4 +53,4 @@ If you have some factory-generated pages from your Routes or another page that y
 ## Credits
 
 - Isaac Bordons <https://topo.bz> — <https://morethanlaw.es>
-- Thanks to Bastian Allgeier and Pedro Borges
+- Thanks to [Bastian Allgeier](https://github.com/bastianallgeier) for [his article on the Cookbook](https://getkirby.com/docs/cookbook/content/sitemap) and [Pedro Borges](https://github.com/pedroborges) for his [K2 XML Sitemap plugin](https://github.com/pedroborges/kirby-xml-sitemap)
