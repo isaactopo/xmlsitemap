@@ -3,7 +3,7 @@
 
 #local
 .vscode
-*.psd
+design/*
 
 # npm modules
 /node_modules
