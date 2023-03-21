@@ -3,7 +3,8 @@
 
 #local
 .vscode
-design/*
+/design/*
+/kirby
 
 # npm modules
 /node_modules
