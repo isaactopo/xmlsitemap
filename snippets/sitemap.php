@@ -4,11 +4,6 @@
         <?php if (in_array($p->uri(), $ignore)) continue ?>
         <?php
         $locales = [];
-        if(kirby()->languages()->count() > 1){
-            $languages = kirby()->languages();
-        } else {
-            $languages = [''];
-        }
         foreach (kirby()->languages() as $language){
             $locales[] = [
                 'hreflang' => $language->code(),
@@ -16,10 +11,9 @@
             ];
         }
         $last_modified = $p->modified('c', 'date');
-        foreach ($languages as $language):
         ?>
          <url>
-            <loc><?= $p->urlForLanguage($language->code()) ?></loc>
+            <loc><?= $p->urlForLanguage($langcode) ?></loc>
             <?php
             if(kirby()->languages()->count() > 1):
                 foreach($locales as $locale): ?>
@@ -44,5 +38,5 @@
                 <?php endforeach ?>
             <?php endif ?>
         </url>
-    <?php endforeach; endforeach ?>
+    <?php endforeach ?>
 </urlset>
