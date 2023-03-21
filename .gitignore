@@ -1,6 +1,10 @@
 # OS files
 .DS_Store
+
+#local
 .vscode
+*.psd
+
 # npm modules
 /node_modules
 
