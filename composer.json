@@ -3,7 +3,7 @@
 	"description": "Kirby 3 Multilanguage XML Sitemap",
 	"license": "MIT",
 	"type": "kirby-plugin",
-	"version": "0.0.1",
+	"version": "0.2.0",
 	"authors": [
 		{
 			"name": "Isaac Bordons Soler",
