@@ -53,6 +53,19 @@ If you have some factory-generated pages from your Routes or another page that y
     return $profiles;
 },
 ```
+### 🛗 Change Page Priority
+The plugin generates an automatic priority according to the depth of each page (Thanks Bastian). But you may want to change the priority of some pages by hand. If so, you can do it by creating a new field in the blueprint of the page you want to include:
+```yaml
+sitemapPriority:
+    label: Sitemap Priority
+    type:  number
+    width: 1/2
+    max:   1
+    min:   0
+    step:  0.1
+```
+This way the plugin will prioritise the input from the Panel.
+
 ## Credits
 
 - Isaac Bordons <https://topo.bz> — <https://morethanlaw.es>

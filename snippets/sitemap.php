@@ -22,7 +22,13 @@
 
             <lastmod><?= $p->modified('c', 'date') ?></lastmod>
             <changefreq><?= getChangeFreq($last_modified) ?></changefreq>
-            <priority><?= ($p->isHomePage()) ? 1 : number_format(0.5 / $p->depth(), 1) ?></priority>
+            <priority><?php
+            if(!$p->sitemapPriority()->exists()){
+                echo ($p->isHomePage()) ? 1 : number_format(0.5 / $p->depth(), 1);
+            } else {
+                echo $p->sitemapPriority()->toFloat();
+            }
+            ?></priority>
 
             <?php if ($includeImages && $p->hasImages()) : ?>
                 <?php foreach ($p->images() as $image) : ?>
