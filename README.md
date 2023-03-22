@@ -64,6 +64,8 @@ sitemapPriority:
     min:   0
     step:  0.1
 ```
+![priority panel field](panel-field.png)
+
 This way the plugin will prioritise the input from the Panel.
 
 ## Credits
