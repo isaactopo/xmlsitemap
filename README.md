@@ -2,6 +2,9 @@
 
 Is a powerful tool for managing and generating sitemaps that is designed to work with [Kirby 3](https://getkirby.com). This plugin provides a straightforward approach for creating XML Sitemaps, especially for sites with multiple languages. The multilingual support allows you to create separate URLs for each language, increasing the SEO performance of your website. The plugin creates one XML file with URLs to your website pages and images, automagically ✨ assigning their priority and last modification date which can be later easily readed by search engines.
 
+If the website has only one language, a sitemap is generated in `/sitemap.xml`.
+With this new version (0.2.0), if the site has two or more languages, a `<sitemapindex>` is generated in `sitemap.xml` and all sub-sitemaps for each language with the following scheme: `sitemap_en.xml`, `sitemap_es.xml`, etc
+
 ****
 ## How to install
 
