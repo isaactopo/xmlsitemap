@@ -20,18 +20,19 @@ Kirby::plugin('isaactopo/xmlsitemap', [
                 // fetch the pages to ignore from the config settings,
                 // if nothing is set, we ignore the error page
                 $ignore = option('isaactopo.xmlsitemap.ignore');
+                $ignoreTemplate = option('isaactopo.xmlsitemap.ignorePageWhenTemplateIs');
                 $includeImages = option('isaactopo.xmlsitemap.includeImages');
 
                 if(kirby()->languages()->count() > 1){
                     if($lang){
                         $langcode = str_replace('_', '', $lang);
-                        $content = snippet('sitemap', compact('pages', 'ignore', 'includeImages', 'langcode'), true);
+                        $content = snippet('sitemap', compact('pages', 'ignore', 'ignoreTemplate', 'includeImages', 'langcode'), true);
                     } else {
                         $content = snippet('sitemapindex', compact('pages'), true);
                     }
                 } else {
                     $langcode = '';
-                    $content = snippet('sitemap', compact('pages', 'ignore', 'includeImages', 'langcode'), true);
+                    $content = snippet('sitemap', compact('pages', 'ignore', 'ignoreTemplate', 'includeImages', 'langcode'), true);
                 }
                 // return response with correct header type
                 return new Kirby\Cms\Response($content, 'application/xml');
@@ -47,5 +48,6 @@ Kirby::plugin('isaactopo/xmlsitemap', [
     'options' => [
         'addCollection' => null,
         'ignore' => [],
+        'ignorePageWhenTemplateIs' => [],
     ],
 ]);
