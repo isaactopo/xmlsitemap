@@ -70,5 +70,5 @@ This way the plugin will prioritise the input from the Panel.
 
 ## Credits
 
-- Isaac Bordons <https://topo.bz> — <https://morethanlaw.es>
+- Isaac Bordons <https://topo.bz> — <https://morethanlaw.es> —
 - Thanks to [Bastian Allgeier](https://github.com/bastianallgeier) for [his article on the Cookbook](https://getkirby.com/docs/cookbook/content/sitemap) and [Pedro Borges](https://github.com/pedroborges) for his [K2 XML Sitemap plugin](https://github.com/pedroborges/kirby-xml-sitemap)
