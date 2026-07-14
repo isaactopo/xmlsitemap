@@ -2,6 +2,7 @@
     <?php
     foreach ($pages as $p): ?>
         <?php if (in_array($p->uri(), $ignore)) continue ?>
+        <?php if (in_array($p->intendedTemplate(), $ignoreTemplate)) continue ?>
         <?php
         $locales = [];
         foreach (kirby()->languages() as $language){
@@ -12,7 +13,7 @@
         }
         $last_modified = $p->modified('c', 'date');
         ?>
-         <url>
+        <url>
             <loc><?= $p->urlForLanguage($langcode) ?></loc>
             <?php
             if(kirby()->languages()->count() > 1):
